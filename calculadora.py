@@ -21,15 +21,15 @@ a = float(input("Digite o primerio número: "))
 
 b = float(input("\nDigite o segundo número: "))
 
-if escolha == "soma" or 1:
+if escolha == "soma" or "1":
     resultado = soma(a, b)
     print(f"{a} + {b} = {resultado:.2f}")
 
-elif escolha == "subtrair" or 2:
+elif escolha == "subtrair" or "2":
     resultado = subtrair(a, b)
     print(f"{a} - {b} = {resultado:.2f}")
 
-elif escolha == "multiplicação" or 3:
+elif escolha == "multiplicação" or "3":
     resultado = multiplicacao(a, b)
     print(f"{a} x {b} = {resultado:.2f}")
 
