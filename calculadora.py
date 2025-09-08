@@ -4,10 +4,32 @@ def soma(a, b):
 def subtrair(a, b):
     return a - b
 
+def multiplicacao(a, b):
+    return a * b
+
+print("Calculadora Simples")
+print("-"*30)
+print("""
+1. Soma
+2. Subtração
+3. Multiplicação
+      """)
+
+escolha = input("Escolha uma opção acima: ").lower
+
 a = float(input("Digite o primerio número: "))
 
-b = float(input("Digite o segundo número: "))
+b = float(input("\nDigite o segundo número: "))
 
-resultado = subtrair(a, b)
+if escolha == "soma" or 1:
+    resultado = soma(a, b)
+    print(f"{a} + {b} = {resultado:.2f}")
 
-print(f"{resultado}")
+elif escolha == "subtrair" or 2:
+    resultado = subtrair(a, b)
+    print(f"{a} - {b} = {resultado:.2f}")
+
+elif escolha == "multiplicação" or 3:
+    resultado = multiplicacao(a, b)
+    print(f"{a} x {b} = {resultado:.2f}")
+
